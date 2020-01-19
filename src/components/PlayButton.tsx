@@ -9,7 +9,7 @@ const Container = styled.span`
   justify-content: center;
 
   > *:first-child {
-    margin-right: 16px;
+    margin-right: 8px;
   }
 
   &:hover {

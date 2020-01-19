@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { animated } from 'react-spring'
 import PlayButton from './components/PlayButton'
+import useFadeIn from './hooks/useFadeIn'
 
 const Container = styled.div`
   min-height: 100vh;
@@ -18,10 +20,13 @@ const Title = styled.h1`
 `
 
 const App: React.FC = () => {
+  const props = useFadeIn()
   return (
     <Container>
-      <Title>Ricardo</Title>
-      <PlayButton />
+      <animated.div style={props}>
+        <Title>Ricardo</Title>
+        <PlayButton />
+      </animated.div>
     </Container>
   )
 }
