@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { animated } from 'react-spring'
 import PlayButton from './components/PlayButton'
+import ContentSection from './components/ContentSection'
 import useFadeIn from './hooks/useFadeIn'
 
 const Container = styled.div`
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <Title>Ricardo</Title>
         <PlayButton />
       </animated.div>
+      <ContentSection />
     </Container>
   )
 }
